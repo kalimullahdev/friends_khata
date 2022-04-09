@@ -48,22 +48,15 @@ class SignInPage extends ConsumerWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const LogoImage(),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 15),
                   Text(
                     'Sign In',
                     style: Theme.of(context).textTheme.headline5,
                   ),
-                  const SizedBox(height: 40),
+                  const SizedBox(height: 25),
                   const SignInForm(),
                   const GoogleSignInButton(),
                   const SizedBox(height: 5),
-                  TextButton(
-                    onPressed: () =>
-                        context.pushRoute(const PasswordResetRoute()),
-                    child: const Text(
-                      'Forgot your password?',
-                    ),
-                  ),
                   BottomTextLink(
                     text: 'Don\'t have an account?',
                     link: 'Create one now.',

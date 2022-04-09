@@ -1,4 +1,6 @@
-import 'package:friends_khata/auth/presentation/widgets/email_icon_button.dart';
+import 'package:auto_route/auto_route.dart';
+import 'package:friends_khata/auth/presentation/widgets/elevated_icon_button.dart';
+import 'package:friends_khata/core/presentation/router/router.gr.dart';
 import 'package:friends_khata/core/presentation/widgets/form_text_input.dart';
 import 'package:friends_khata/auth/shared/providers.dart';
 import 'package:friends_khata/core/presentation/validators/form_validators.dart';
@@ -43,7 +45,17 @@ class _SignInFormState extends ConsumerState<SignInForm> {
             secure: true,
             controller: _passwordController,
           ),
-          EmailIconButton(
+          Align(
+            alignment: Alignment.topRight,
+            child: TextButton(
+              onPressed: () => context.pushRoute(const PasswordResetRoute()),
+              child: const Text(
+                'Forgot your password?',
+              ),
+            ),
+          ),
+          ElevatedIconButton(
+            icon: const Icon(Icons.email),
             text: 'Sign in with Email',
             onPressed: () {
               if (_formKey.currentState!.validate()) {

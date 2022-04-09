@@ -21,7 +21,6 @@ class TransactionPage extends StatelessWidget {
             },
             child: Text(
               "Edit",
-              style: TextStyle(color: Colors.white), //TODO: remove line
             ),
           )
         ],

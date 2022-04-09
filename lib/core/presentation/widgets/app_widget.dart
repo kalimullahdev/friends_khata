@@ -41,7 +41,7 @@ class AppWidget extends ConsumerWidget {
     });
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      // theme: CustomTheme.appTheme,
+      theme: CustomTheme.appTheme,
       routerDelegate: _appRouter.delegate(),
       routeInformationParser: _appRouter.defaultRouteParser(),
     );

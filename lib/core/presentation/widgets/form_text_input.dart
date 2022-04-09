@@ -26,19 +26,18 @@ class FormTextInput extends StatelessWidget {
     this.errorBorder = const OutlineInputBorder(
       borderSide: BorderSide(
         color: CustomColors.mediumRed,
-        width: 2,
+        width: 1.5,
       ),
     ),
     this.focusedBorder = const OutlineInputBorder(
       borderSide: BorderSide(
-        color: CustomColors.mediumYellow,
-        width: 2,
+        color: Colors.black45,
+        width: 1.5,
       ),
     ),
     this.enabledBorder = const OutlineInputBorder(
       borderSide: BorderSide(
-        color: CustomColors.lightBlue,
-        width: 2,
+        color: Colors.black26,
       ),
     ),
   }) : super(key: key);
@@ -46,20 +45,21 @@ class FormTextInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 15),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       child: TextFormField(
         textAlign: textAlign ?? TextAlign.start,
         controller: controller,
         validator: validator,
         style: const TextStyle(
-          color: Colors.white70,
-          fontSize: 18,
+          color: Colors.black,
+          fontSize: 14,
+          fontWeight: FontWeight.w600,
         ),
         obscureText: secure == true ? true : false,
         decoration: InputDecoration(
-          hintText: hintText,
+          hintText: label,
           hintStyle: const TextStyle(
-            color: Colors.white70,
+            color: Colors.black45,
           ),
           border: border,
           errorBorder: errorBorder,
@@ -68,16 +68,16 @@ class FormTextInput extends StatelessWidget {
           suffixIcon: icon != null
               ? Icon(
                   icon,
-                  color: CustomColors.lightBlue,
+                  color: Colors.black45,
                 )
               : null,
           errorStyle: const TextStyle(fontSize: 14),
-          label: label != null
-              ? Text(
-                  label!,
-                  style: const TextStyle(color: Colors.white70),
-                )
-              : null,
+          // label: label != null
+          //     ? Text(
+          //         label!,
+          //         style: const TextStyle(color: Colors.black54),
+          //       )
+          //     : null,
         ),
       ),
     );

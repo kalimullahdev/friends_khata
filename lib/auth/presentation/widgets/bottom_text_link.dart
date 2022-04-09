@@ -18,9 +18,6 @@ class BottomTextLink extends StatelessWidget {
       children: [
         Text(
           text,
-          style: const TextStyle(
-            color: Colors.white70,
-          ),
           textAlign: TextAlign.center,
         ),
         const SizedBox(width: 2),

@@ -14,14 +14,12 @@ class KhataDetailsPage extends StatelessWidget {
               onPressed: () => context.pushRoute(const TransactionRoute()),
               child: const Text(
                 "Transc",
-                style: TextStyle(color: Colors.white), // TODO: remove this line
               )),
           TextButton(
               onPressed: () =>
                   context.pushRoute(const TransactionHistoryRoute()),
               child: Text(
                 "TH",
-                style: TextStyle(color: Colors.white), // TODO: remove this line
               )),
         ],
       ),

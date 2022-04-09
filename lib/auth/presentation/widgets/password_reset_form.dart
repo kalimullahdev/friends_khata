@@ -1,4 +1,4 @@
-import 'package:friends_khata/auth/presentation/widgets/email_icon_button.dart';
+import 'package:friends_khata/auth/presentation/widgets/elevated_icon_button.dart';
 import 'package:friends_khata/core/presentation/widgets/form_text_input.dart';
 import 'package:friends_khata/auth/shared/providers.dart';
 import 'package:friends_khata/core/presentation/theming/custom_colors.dart';
@@ -55,7 +55,8 @@ class _PasswordResetFormState extends ConsumerState<PasswordResetForm> {
             ),
           ),
           const SizedBox(height: 20),
-          EmailIconButton(
+          ElevatedIconButton(
+            icon: const Icon(Icons.email),
             text: 'Send Reset Email',
             onPressed: () {
               ref

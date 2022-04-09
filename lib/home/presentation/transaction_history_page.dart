@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:toggle_switch/toggle_switch.dart';
 
 class TransactionHistoryPage extends StatelessWidget {
   const TransactionHistoryPage({Key? key}) : super(key: key);
