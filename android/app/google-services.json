@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "444310229431",
+    "project_id": "friends-khata-98dde",
+    "storage_bucket": "friends-khata-98dde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444310229431:android:b9137e157ce92cbc339832",
+        "android_client_info": {
+          "package_name": "com.kalimse.friends_khata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444310229431-jt4qi68b5qjresphfltlnbhc4ajth5bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDNS1GgccLW95cspr1-rUmLgXaT--0IgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444310229431-jt4qi68b5qjresphfltlnbhc4ajth5bn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
